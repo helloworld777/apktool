@@ -1,0 +1,5 @@
+make keystore 
+keytool -genkey -v -keyalg DSA -keysize 1024 -sigalg SHA1withDSA  -validity 10000  -keystore Test.keystore -alias devel   -keypass 123456 -storepass 123456
+
+signer
+jarsigner  -verbose -sigalg SHA1withDSA -digestalg SHA1  -keystore Test.keystore -storepass 123456 test.apk devel

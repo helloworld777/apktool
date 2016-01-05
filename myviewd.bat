@@ -1,0 +1,1 @@
+apktool d myview.apk
