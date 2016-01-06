@@ -1,0 +1,1 @@
+jarsigner  -verbose -sigalg SHA1withDSA -digestalg SHA1  -keystore Test.keystore -storepass 123456 app-debug.apk devel
